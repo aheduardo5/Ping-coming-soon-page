@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/* ## Colors */
+:root {
+  /* ### Primary */
+  --Blue: hsl(223, 87%, 63%);
+  /* ### Secondary */
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  /* ### Neutral */
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+.main-container {
+  margin: 85px auto 60px;
+}
+.main-container .logo {
+  width: 52px;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.main-container h1 {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: var(--Gray);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.main-container h1 span {
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+}
+.main-container .subscribe {
+  text-align: center;
+  font-size: 0.65em;
+  margin-bottom: 35px;
+}
+
+.main-container form {
+  width: 282px;
+  margin: auto;
+}
+
+.main-container input[type="email"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid var(--Blue);
+  color: var(--Gray);
+  padding: 0px 15px;
+}
+.main-container input[type="email"]:focus {
+  outline: none;
+}
+.main-container #error-message {
+  color: var(--LightRed);
+  font-size: 0.65em;
+  font-style: italic;
+  text-align: center;
+  visibility: hidden;
+  margin-bottom: 15px;
+}
+
+.main-container input[type="submit"] {
+  background-color: var(--Blue);
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 70px;
+  color: var(--PaleBlue);
+  font-weight: 700;
+  box-shadow: 3px 3px 5px var(--Blue);
+}
+.main-container input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.main-container .img-dashboard {
+  width: 322px;
+  display: block;
+  margin: 0px auto 120px;
+}
+
+.social-container {
+  width: 150px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-container .icon {
+  width: .9em;
+  height: .9em;
+  color: var(--Blue);
+}
+
+.social-container .icon-container {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--Blue);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  fill: var(--Blue);
+}
+.social-container .icon-container:hover {
+  fill: white;
+  background-color: var(--Blue);
+  transition: 300ms;
+}
+.copy{
+  text-align: center;
+  color: var(--Gray);
+  font-size: 0.6em;
+}
+/* FOOTER */
+.attribution {
+  color: var(--Gray);
+  font-size: 11px;
+  text-align: center;
+  font-weight: 700;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* DESKTOP */
+@media (min-width: 768px){
+  .main-container .logo{
+    width: 96px;
+    margin-bottom: 60px;
+  }
+  .main-container h1{
+    font-size: 2.5em;
+  }
+  .main-container .subscribe {
+    font-size: 1.05em;
+    font-weight: 300;
+  }
+  
+  .main-container form {
+    width: 638px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-container input[type="email"] {
+    width: 420px;
+    height: 55px;
+    font-size: .8em;
+  }
+  .main-container #error-message {
+    text-align: left;
+    padding: 0px 15px;
+  }
+  .main-container input[type="submit"] {
+   width: 200px;
+   height: 55px;
+   margin-bottom: 90px;
+   font-size: .8em;
+  }
+  .main-container .img-dashboard {
+    width: 640px;
+    margin: 0px auto 74px;
+  }
+}
